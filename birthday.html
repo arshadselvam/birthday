@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="birthdaystyle.css">
+<script>
+    function handleClick1(event){
+        console.log('The event target',event);
+        var a = document.getElementById('cover');
+        a.style.backgroundImage = 'url("file:///C:/Users/User/Desktop/learns%20arshad/birthday/joey.jpg")';
+        console.log(a.style.backgroundImage);
+        var b = document.querySelectorAll('.cover');
+        b.forEach((el)=>{
+            if(el.id == a.id){
+                return;
+            }
+            else{
+                el.style.backgroundImage = 'url("https://img.freepik.com/free-photo/nice-wrapping-paper-with-elegant-bow_1101-617.jpg")';
+            }
+        })
+    }
+    function handleClick2(event){
+        console.log('The event target',event);
+        var a = document.getElementById('cover2');
+        a.style.backgroundImage = 'url("file:///C:/Users/User/Desktop/learns%20arshad/birthday/prisc4.gif")';
+        console.log(a.style.backgroundImage);
+        var b = document.querySelectorAll('.cover');
+
+        b.forEach((el)=>{
+            if(el.id == a.id){
+                return;
+            }
+            else{
+                el.style.backgroundImage = 'url("https://img.freepik.com/free-photo/nice-wrapping-paper-with-elegant-bow_1101-617.jpg")';
+            }
+        })
+    }
+    function handleClick3(event){
+        console.log('The event target',event);
+        var a = document.getElementById('cover3');
+        a.style.backgroundImage = 'url("file:///C:/Users/User/Desktop/learns%20arshad/birthday/trip.jpg")';
+        console.log(a.style.backgroundImage);
+        var b = document.querySelectorAll('.cover');
+
+        b.forEach((el)=>{
+            if(el.id == a.id){
+                return;
+            }
+            else{
+                el.style.backgroundImage = 'url("https://img.freepik.com/free-photo/nice-wrapping-paper-with-elegant-bow_1101-617.jpg")';
+            }
+        })
+    }
+    function handleClick4(event){
+        console.log('The event target',event);
+        var a = document.getElementById('cover4');
+        a.style.backgroundImage = 'url("file:///C:/Users/User/Desktop/learns%20arshad/birthday/pongal.jpg")';
+        console.log(a.style.backgroundImage);
+        var b = document.querySelectorAll('.cover');
+
+        b.forEach((el)=>{
+            if(el.id == a.id){
+                return;
+            }
+            else{
+                el.style.backgroundImage = 'url("https://img.freepik.com/free-photo/nice-wrapping-paper-with-elegant-bow_1101-617.jpg")';
+            }
+        })
+    }
+    function handleClick5(event){
+        console.log('The event target',event);
+        var a = document.getElementById('cover5');
+        a.style.backgroundImage = 'url("file:///C:/Users/User/Desktop/learns%20arshad/birthday/last.jpg")';
+        console.log(a.style.backgroundImage);
+        var b = document.querySelectorAll('.cover');
+
+        b.forEach((el)=>{
+            if(el.id == a.id){
+                return;
+            }
+            else{
+                el.style.backgroundImage = 'url("https://img.freepik.com/free-photo/nice-wrapping-paper-with-elegant-bow_1101-617.jpg")';
+            }
+        })
+    }
+</script>
+</head>
+<body>
+<div class="side">
+<div id="header">
+<h1>Today is Your birthday</h1>
+<img id="logo" alt="pose at beach" src="C:\Users\User\Desktop\learns arshad\birthday\logo.jpg">
+<h2 id="age" >21 years old</h2>
+<h4 id="date">21.01.2023</h4>
+<div class="side">
+<div class="image1">
+<h2 class="message">Found your source of happiness</h2>
+<h3 class="hint">(Hover over the gift)</h3>
+<div class="cover" onclick="handleClick1()" id="cover" alt="gift cover"></div>
+
+<div class="image1">
+<h2 class="message">Gangster Jillian:</h2>
+<div class="cover" onclick="handleClick2()" id="cover2" alt="gift cover"></div>
+
+<div class="image1">
+<h2 class="message">Trip with your frnds:</h2>
+<div class="cover" onclick="handleClick3()" id="cover3"alt="gift cover"></div>
+
+<div class="image1">
+<h2 class="message">frnds moment in college:</h2>
+<div class="cover" onclick="handleClick4()" id="cover4"alt="gift cover"></div>
+</div>
+
+<div class="image1">
+<h2 class="message">last message:</h2>
+<div class="cover" onclick="handleClick5()" id="cover5"alt="gift cover"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
